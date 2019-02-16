@@ -1,0 +1,122 @@
+.nav-custom {
+    background-color: #e9ecef;
+}
+.clear {
+    width: 100%;
+    float: left;
+    clear: both;
+}
+.wrap {
+  padding: 0 13.5%;
+    margin-right: auto;
+    margin-left: auto;
+}
+body {
+  color: #525252;
+}
+a {
+  color: #525252;
+}
+#internships .container {
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 13.5%;
+  
+  }
+  #hackathons .container {
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 13.5%;
+  
+  }
+  #education .container {   
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 13.5%;
+  
+  }
+#content-background {
+  background-color: #f5f5f5;
+  max-width: 1380px;
+  margin: auto;
+}
+#content {
+  margin: 0 65px
+}
+.nav-link:hover {
+  color: #f00658;
+  transition: 0.3s;
+}
+#footer {
+    padding: 50px 0;
+    margin-right: 20%;
+    margin-left: 17%;
+    
+}
+.footer-style {
+    padding: 20px;
+    font-size: 2em; 
+    line-height: 46px;
+    font-weight: 500;
+}
+.footer-style a {
+    color: #f00658;
+}
+.fa {
+    text-align: center;
+    text-decoration: none;
+
+  }
+  .fa:hover {
+      color: #f00658;
+  }
+  .fa-linkedin {
+    background: white;
+    color: #525252;
+  }
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: translate(0%, 100%);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
+  .text {
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .card:hover .overlay {
+    opacity: 1;
+  }
+
+.wrap:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+
+  }
+
+ 
