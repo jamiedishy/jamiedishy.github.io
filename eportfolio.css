@@ -1,6 +1,16 @@
 .nav-custom {
     background-color: #e9ecef;
 }
+.jumbotron {
+  min-height: 500px;
+}
+.jumbotron h1 {
+  font-size: 72px; 
+  text-align: center;
+}
+.jumbotron h1:hover {
+  cursor: pointer;
+}
 .clear {
     width: 100%;
     float: left;
@@ -10,6 +20,7 @@
   padding: 0 13.5%;
     margin-right: auto;
     margin-left: auto;
+    font-weight: 100;
 }
 body {
   color: #525252;
@@ -57,7 +68,7 @@ a {
     padding: 20px;
     font-size: 2em; 
     line-height: 46px;
-    font-weight: 500;
+    font-weight: 100;
 }
 .footer-style a {
     color: #f00658;
@@ -119,4 +130,20 @@ a {
 
   }
 
- 
+
+  .pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
+}
