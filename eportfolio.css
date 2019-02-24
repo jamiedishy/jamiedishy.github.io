@@ -62,7 +62,7 @@ a {
   max-width: 1380px;
   margin: auto;
   border-top: 1px dashed #8c8b8b; 
-  border-bottom: 3px dashed #8c8b8b; 
+  border-bottom: 1px dashed #8c8b8b; 
 
 }
 #content-background:after { 
@@ -73,6 +73,7 @@ a {
   left: 70px; 
   background: transparent;
   font-size: 20px; 
+  transform: rotateZ(275deg); /* Standard syntax */
 } 
 
 #content {
@@ -196,4 +197,5 @@ hr:after {
   padding: 0 3px; 
   background: transparent;
   font-size: 20px; 
+  transform: rotateZ(275deg); /* Standard syntax */
 }
