@@ -6,7 +6,8 @@
 }
 .jumbotron h1 {
   font-size: 72px; 
-  text-align: center;
+
+
 }
 .jumbotron h1:hover {
   cursor: pointer;
