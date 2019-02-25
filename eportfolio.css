@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-custom {
     background-color: #e9ecef;
 }
 .jumbotron {
-  min-height: 500px;
+  min-height: 600px;
+
 }
 .jumbotron h1 {
   font-size: 72px; 
@@ -63,19 +68,17 @@ a {
   margin: auto;
   border-top: 1px dashed #8c8b8b; 
   border-bottom: 1px dashed #8c8b8b; 
-
 }
 #content-background:after { 
   content: '\002702'; 
   display: inline-block; 
   position: relative; 
   top: -1850px;
-  left: 70px; 
+  right: -1270px; 
   background: transparent;
   font-size: 20px; 
-  transform: rotateZ(275deg); /* Standard syntax */
+  transform: rotateZ(90deg); /* Standard syntax */
 } 
-
 #content {
   margin: 0 65px
 }
@@ -127,9 +130,7 @@ a {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-
   }
-
   .text {
     color: black;
     font-size: 20px;
@@ -147,8 +148,9 @@ a {
   .card:hover .overlay {
     opacity: 1;
   }
-
-
+  .card:hover {
+    opacity: 0.5;
+  }
 @keyframes float {
 	0% {
     transform: translatey(0px);
@@ -187,6 +189,10 @@ a {
 hr {
   border-top: 1px dashed #8c8b8b;
   max-width: 1380px; 
+  position: fixed;
+  width: 1380px;
+  margin-left: 2%;
+  height: 30px;
 }
 hr:after { 
   content: "\2702";
@@ -199,3 +205,29 @@ hr:after {
   font-size: 20px; 
   transform: rotateZ(275deg); /* Standard syntax */
 }
+
+body{margin:0;}
+#rotating-section{ 
+        height: 200px;
+        overflow:hidden;
+				}
+.rect1,.rect2,.rect3,.rect4{
+		position:absolute;
+		width:100px;
+		height:100px;
+		bottom:-150px;
+		background:#e9ecef;
+		-webkit-animation: mymove2 4s linear infinite;
+}
+
+.rect1{left:50%;}
+.rect2{left:10%;-webkit-animation-delay:0.3s;}
+.rect3{left:25%;-webkit-animation-delay:2s;}
+.rect4{left:85%;-webkit-animation-delay:1s;}
+
+
+@-webkit-keyframes mymove2{
+	
+	0%{	transform:rortate(0deg);opacity:1;}
+	100%{transform:rotate(540deg);opacity:0;bottom:340px;}
+	}

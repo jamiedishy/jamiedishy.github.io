@@ -22,43 +22,59 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="eportfolio.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="https://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="nav nav-custom" style="background-color: #fff; padding: 15px 0
+
+  <div style="position: fixed; width: 100%;">
+    <nav class="nav nav-custom" style="background-color: #fff; padding: 15px 0
       0px; margin: auto; margin-left: 16.8%; ">
-    <a class="nav-link active" href="#">Portfolio</a>
-    <a class="nav-link" style=" text-align: right;" href="#">About</a>
-    <a class="nav-link" style="padding-right: 60px;" href="#">Contact Me</a>
-  </nav>
-  <hr>
+      <a class="nav-link active" href="#"><strike>Portfolio</strike></a>
+      <a class="nav-link" style=" text-align: right;" href="aboutme.html">About</a>
+      <a href="#footer" class="nav-link" style="padding-right: 60px;">Contact Me</a>
+    </nav>
+    <hr id="object">
+  </div>
+
 
   <!-- jumbotron -->
-  <div class="jumbotron jumbotron-fluid" style="background-color: #fff; padding: 10%;
-  margin-left: 8%;">
-
-
-    <h1 id="demo" onclick="myFunction()" class="shaking" style="color: #f00658; font-weight: 300;">Hello
-      <h1 style=" font-size: 72px; font-weight: 300;">
-        My name is Jamie Dishy.
+  <div class="jumbotron jumbotron-fluid" style="background-color: #fff; padding: 15%;
+  margin-left: 3%;">
+    <div style="position: fixed;">
+      <h1 id="demo" onclick="myFunction()" class="shaking" style="color: #f00658; font-weight: 300;">Hello
+        <h1 style=" font-size: 72px; font-weight: 300;">
+          My name is Jamie Dishy.
+        </h1>
       </h1>
-    </h1>
-    <h2 style="max-width: 690px; font-weight: 100;">I solve problems to create
-      impactful
-      solutions and meaningful experiences.</h2>
-
-
+      <h2 style="max-width: 690px; font-weight: 100;">I solve problems to create
+        impactful
+        solutions and meaningful experiences.</h2>
+    </div>
     <script>
       function myFunction() {
         document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "!";
       }
     </script>
 
+    <section id="rotating-section">
+      <div id="rotating-animation">
+        <div>
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
+        </div>
+      </div>
+    </section>
+
   </div>
 
-  <section id="content-background">
+
+  <section id="content-background" style="position: relative;">
     <section id="content">
 
       <!-- internships -->
@@ -73,7 +89,6 @@
         <br>
         <div class="container">
           <div class="row">
-
             <div class="card" style="width: 18rem; height:
                 25rem;">
               <img src="https://i.ibb.co/5K7S0rg/IBM.png" alt="IBM" class="image"
@@ -83,7 +98,8 @@
                   and
                   integration with Docker, SOLR, DB2, OMS, IHS and WAS. I
                   identify
-                  defects through log analysis and debugging code.</div>
+                  defects through log analysis and debugging code.
+                </div>
               </div>
             </div>
 
@@ -231,12 +247,13 @@
   </section>
 
   <!-- footer -->
+
   <section id="footer">
     <footer>
       <div class="footer-style">
         <h2 style=" font-weight: 100;">Like what you see?</h2>
         <p>Learn more
-          <a href="#">about me</a>, follow me, or contact me below!</p>
+          <a href="aboutme.html">about me</a>, follow me, or contact me below!</p>
       </div>
       <a href="https://www.linkedin.com/in/jamie-dishy-5ba619b1" class="fa
           fa-linkedin" style="font-size: 30px; transition:
@@ -245,6 +262,8 @@
         style="font-size: 30px; margin-left: 3%; transition: 0.3s;"></a>
     </footer>
   </section>
+
+
 
 
 

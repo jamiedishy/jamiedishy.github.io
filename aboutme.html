@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!--
+\(")/         
+-( )-
+-(_)-
+ / \      
+-->
+
+<html>
+
+    <head>
+        <title>
+            🦄 About me!</title>
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+            crossorigin="anonymous">
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
+            integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="eportfolio.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="https://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
+        <style>
+     .button {
+  background-color: white; /* Green */
+  border-color: #525252;
+  color: #525252;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px 4px;
+  cursor: pointer;
+}
+h2 {
+    max-width: 850px;
+    font-size: 30px; 
+    font-weight: 200;
+}
+#content p {
+    padding: 13.5%;
+}
+.shaking1 {
+  animation: shake 8s;
+  animation-iteration-count: infinite;
+}
+.shaking2 {
+  animation: shake 6.5s;
+  animation-iteration-count: infinite;
+}
+.shaking3 {
+  animation: shake 7s;
+  animation-iteration-count: infinite;
+}
+
+    </style>
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+
+        <div style="position: fixed; width: 100%;">
+            <nav class="nav nav-custom" style="background-color: #fff; padding:
+                15px 0
+                0px; margin: auto; margin-left: 16.8%;">
+                <a class="nav-link active" href="eportfolio.html">Portfolio</a>
+                <a class="nav-link" style="text-align: right;"
+                    href="aboutme.html"><strike>About</strike></a>
+                <a href="#footer" class="nav-link" style="padding-right: 60px;">Contact
+                    Me</a>
+            </nav>
+            <hr id="object">
+        </div>
+
+        <!-- jumbotron -->
+        <div class="jumbotron jumbotron-fluid" style="background-color: #fff;
+            padding: 15%; margin-left: 3%;">
+            <div style="position: fixed;">
+                <h1 id="demo" onclick="myFunction()" class="shaking"
+                    style="color: #f00658; font-weight: 300;">I'm Jamie</h1>
+                <br>
+                <script>
+                    function myFunction() {
+                        document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "!";
+                    }
+                </script>
+                <h2 id="program">Program: <button
+                        class="button shaking1" onclick="myFunction1()">?</button></h2>
+                <script>
+                    function myFunction1() {
+                      document.getElementById("program").innerHTML = "Program: Software Engineering";
+                    }
+            </script>
+                <h2 id="hobby">Hobbies:
+                    <button class="button shaking2" onclick="myFunction2()">??</button></h2>
+                <script>
+                     function myFunction2() {
+                       document.getElementById("hobby").innerHTML = "Hobbies: Skiing, belly dancing, and reading comics!";
+                     }
+             </script>
+                <h2 id="project">Current passion
+                    project:
+                    <button class="button shaking3" onclick="myFunction3()">???</button></h2>
+                <script>
+                         function myFunction3() {
+                           document.getElementById("project").innerHTML = "Current passion project: Using Machine Learning to identify hand-written text";
+                         }
+                 </script>
+            </div>
+            <section id="rotating-section">
+                    <div id="rotating-animation">
+                      <div>
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                      </div>
+                    </div>
+                  </section>
+
+        </div>
+
+
+        <section id="content-background" style="position: relative;">
+            <section id="content">
+
+                <p>I'm a third year software engineering student at the Lassonde School of Engineering. I'm passionate about analyzing issues to produce effective and impactful products.
+<br>
+                Toolbox: JavaScript, HTML, CSS, Java, Figma, Assembly, BASH, MATLAB, C
+<br>
+Skills: UI Design, Web Design, Wireframing, Agile, Test-Driven Development
+<br>
+Honors: Society of Professional Engineers, Golden Key Recognition
+<br>
+Published work: Index Health Search
+
+
+
+
+
+            </section>
+        </section>
+
+        <!-- footer -->
+
+        <section id="footer">
+            <footer>
+                <div class="footer-style">
+                    <h2 style="font-weight: 100;">Like what you see?</h2>
+                    <p>Learn more
+                        <a href="aboutme.html">about me</a>, follow me, or contact me
+                        below!</p>
+                </div>
+                <a href="https://www.linkedin.com/in/jamie-dishy-5ba619b1"
+                    class="fa
+                    fa-linkedin" style="font-size: 30px; transition:
+                    0.3s; margin-left: 2.5%;"></a>
+                <a href="https://github.com/jamiedishy" class="fa fa-github"
+                    style="font-size: 30px; margin-left: 3%; transition: 0.3s;"></a>
+            </footer>
+        </section>
+
+
+    </body>
+
+</html>
