@@ -1,5 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-custom {
     background-color: #e9ecef;
+}
+.jumbotron {
+  min-height: 600px;
+
+}
+.jumbotron h1 {
+  font-size: 72px; 
+
+
+}
+.jumbotron h1:hover {
+  cursor: pointer;
 }
 .clear {
     width: 100%;
@@ -10,10 +26,21 @@
   padding: 0 13.5%;
     margin-right: auto;
     margin-left: auto;
+    font-weight: 100;
+}
+.wrap:hover {
+  color: #f00658;
+  transition: 0.3s;
 }
 body {
   color: #525252;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
+
 a {
   color: #525252;
 }
@@ -39,7 +66,19 @@ a {
   background-color: #f5f5f5;
   max-width: 1380px;
   margin: auto;
+  border-top: 1px dashed #8c8b8b; 
+  border-bottom: 1px dashed #8c8b8b; 
 }
+#content-background:after { 
+  content: '\002702'; 
+  display: inline-block; 
+  position: relative; 
+  top: -1850px;
+  right: -1270px; 
+  background: transparent;
+  font-size: 20px; 
+  transform: rotateZ(90deg); /* Standard syntax */
+} 
 #content {
   margin: 0 65px
 }
@@ -57,7 +96,7 @@ a {
     padding: 20px;
     font-size: 2em; 
     line-height: 46px;
-    font-weight: 500;
+    font-weight: 100;
 }
 .footer-style a {
     color: #f00658;
@@ -91,9 +130,7 @@ a {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
   }
-
   .text {
     color: black;
     font-size: 20px;
@@ -105,18 +142,92 @@ a {
     transform: translate(-50%, -50%);
     text-align: center;
   }
-
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
   .card:hover .overlay {
     opacity: 1;
   }
-
-.wrap:hover {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-    background-position: 0 100%;
-    background-size: auto 6px;
-    background-repeat: repeat-x;
-    text-decoration: none;
-
+  .card:hover {
+    opacity: 0.5;
   }
+@keyframes float {
+	0% {
+    transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 
- 
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake:hover {
+  animation: shake 3s;
+  animation-iteration-count: infinite;
+}
+.shaking {
+  animation: shake 6s;
+  animation-iteration-count: infinite;
+}
+
+hr {
+  border-top: 1px dashed #8c8b8b;
+  max-width: 1380px; 
+  position: fixed;
+  width: 1380px;
+  margin-left: 2%;
+  height: 30px;
+}
+hr:after { 
+  content: "\2702";
+  display: inline-block; 
+  position: relative; 
+  top: -12px; 
+  left: 70px; 
+  padding: 0 3px; 
+  background: transparent;
+  font-size: 20px; 
+  transform: rotateZ(275deg); /* Standard syntax */
+}
+
+body{margin:0;}
+#rotating-section{ 
+        height: 200px;
+        overflow:hidden;
+				}
+.rect1,.rect2,.rect3,.rect4{
+		position:absolute;
+		width:100px;
+		height:100px;
+		bottom:-150px;
+		background:#e9ecef;
+		-webkit-animation: mymove2 4s linear infinite;
+}
+
+.rect1{left:50%;}
+.rect2{left:10%;-webkit-animation-delay:0.3s;}
+.rect3{left:25%;-webkit-animation-delay:2s;}
+.rect4{left:85%;-webkit-animation-delay:1s;}
+
+
+@-webkit-keyframes mymove2{
+	
+	0%{	transform:rortate(0deg);opacity:1;}
+	100%{transform:rotate(540deg);opacity:0;bottom:340px;}
+	}
