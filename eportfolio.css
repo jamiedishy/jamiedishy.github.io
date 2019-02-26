@@ -11,8 +11,6 @@ html {
 }
 .jumbotron h1 {
   font-size: 72px; 
-
-
 }
 .jumbotron h1:hover {
   cursor: pointer;
@@ -228,6 +226,6 @@ body{margin:0;}
 
 @-webkit-keyframes mymove2{
 	
-	0%{	transform:rortate(0deg);opacity:1;}
+	0%{	transform:rotate(0deg);opacity:1;}
 	100%{transform:rotate(540deg);opacity:0;bottom:340px;}
 	}
