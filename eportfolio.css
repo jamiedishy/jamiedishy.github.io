@@ -25,6 +25,7 @@ html {
     margin-right: auto;
     margin-left: auto;
     font-weight: 100;
+    cursor: pointer;
 }
 .wrap:hover {
   color: #f00658;
@@ -238,3 +239,4 @@ body{margin:0;}
     width: 100%;
     background-color: #525252;
   }
+
