@@ -71,14 +71,14 @@ a {
   content: '\002702'; 
   display: inline-block; 
   position: relative; 
-  top: -1850px;
+  top: -1860px;
   right: -1270px; 
   background: transparent;
   font-size: 20px; 
   transform: rotateZ(90deg); /* Standard syntax */
 } 
 #content {
-  margin: 0 65px
+  padding: 100px 60px;
 }
 .nav-link:hover {
   color: #f00658;
@@ -127,27 +127,29 @@ a {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
+    transition: 0.5s ease;
   }
   .text {
-    color: black;
-    font-size: 20px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 100; 
+    padding: 40px 20px;
+  }
+  .text h2 {
+    font-weight: 100;
+  }
+  .text small {
+    color: #ff0000;
+  }
+  .text a {
+    color: #ff0000;
   }
  .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .card:hover .overlay {
     opacity: 1;
-  }
-  .card:hover {
-    opacity: 0.5;
   }
 @keyframes float {
 	0% {
@@ -176,7 +178,7 @@ a {
 }
 
 .shake:hover {
-  animation: shake 3s;
+  animation: shake 5s;
   animation-iteration-count: infinite;
 }
 .shaking {
@@ -196,7 +198,7 @@ hr:after {
   content: "\2702";
   display: inline-block; 
   position: relative; 
-  top: -12px; 
+  top: -15px; 
   left: 70px; 
   padding: 0 3px; 
   background: transparent;
@@ -229,3 +231,10 @@ body{margin:0;}
 	0%{	transform:rotate(0deg);opacity:1;}
 	100%{transform:rotate(540deg);opacity:0;bottom:340px;}
 	}
+
+
+  .text-block {
+    height: 100%;
+    width: 100%;
+    background-color: #525252;
+  }
