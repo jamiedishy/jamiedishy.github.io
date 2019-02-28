@@ -7,7 +7,6 @@ html {
 }
 .jumbotron {
   min-height: 600px;
-
 }
 .jumbotron h1 {
   font-size: 72px; 
@@ -39,7 +38,6 @@ body {
   padding: 0px;
   overflow-x: hidden; 
 }
-
 a {
   color: #525252;
 }
@@ -147,11 +145,12 @@ a {
     color: #ff0000;
   }
  .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   }
   .card:hover .overlay {
     opacity: 1;
   }
+
 @keyframes float {
 	0% {
     transform: translatey(0px);
