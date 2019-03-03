@@ -66,16 +66,6 @@ a {
   border-top: 1px solid #e9ecef; 
   border-bottom: 1px solid #e9ecef; 
 }
-#content-background:after { 
-  content: '\002702'; 
-  display: inline-block; 
-  position: relative; 
-  top: -1860px;
-  right: -1270px; 
-  background: transparent;
-  font-size: 20px; 
-  transform: rotateZ(90deg); /* Standard syntax */
-} 
 #content {
   padding: 100px 60px;
 }
@@ -216,7 +206,7 @@ body{margin:0;}
 		width:100px;
 		height:100px;
 		bottom: 0px;
-		background:#e9ecef;
+		background: yellow;
 		-webkit-animation: mymove2 4s linear infinite;
 }
 
@@ -238,4 +228,21 @@ body{margin:0;}
     width: 100%;
     background-color: #525252;
   }
+  .rect5,.rect6,.rect7,.rect8{
 
+		width:50px;
+		height:50px;
+		background:#000;
+		bottom: 0px;
+		-webkit-animation: mymove2 4s linear infinite;	
+}
+.rect5{left:0%;}
+.rect6{left:15%;-webkit-animation-delay:2.2s;}
+.rect7{left:45%;-webkit-animation-delay:0.8s;}
+.rect8{left:77%;-webkit-animation-delay:1.4s;}
+
+.footer-block {
+  width: 100%;
+  background-color:white;
+  position: absolute;
+}
