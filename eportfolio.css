@@ -74,15 +74,15 @@ a {
   transition: 0.3s;
 }
 #footer {
-    padding: 50px 0;
+    padding: 5% 0%;
     margin-right: 20%;
     margin-left: 17%;
     
 }
 .footer-style {
-    padding: 20px;
+    padding: 1%;
     font-size: 2em; 
-    line-height: 46px;
+    line-height: 1.5;
     font-weight: 100;
 }
 .footer-style a {
@@ -249,3 +249,7 @@ body{margin:0;}
   background-color:white;
   position: absolute;
 }
+
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%;
