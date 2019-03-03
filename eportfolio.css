@@ -31,7 +31,7 @@ html {
   transition: 0.3s;
 }
 body {
-  color: #525252;
+  color: #1b2a46;
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -39,7 +39,7 @@ body {
   overflow-x: hidden; 
 }
 a {
-  color: #525252;
+  color: #1b2a46;
 }
 #internships .container {
     margin-top: 20px;
@@ -74,15 +74,15 @@ a {
   transition: 0.3s;
 }
 #footer {
-    padding: 50px 0;
+    padding: 5% 0%;
     margin-right: 20%;
     margin-left: 17%;
     
 }
 .footer-style {
-    padding: 20px;
+    padding: 1%;
     font-size: 2em; 
-    line-height: 46px;
+    line-height: 1.5;
     font-weight: 100;
 }
 .footer-style a {
@@ -98,7 +98,7 @@ a {
   }
   .fa-linkedin {
     background: white;
-    color: #525252;
+    color: #1b2a46;
   }
 
 .image {
@@ -226,23 +226,30 @@ body{margin:0;}
   .text-block {
     height: 100%;
     width: 100%;
-    background-color: #525252;
+    background-color: #1b2A46;
   }
-  .rect5,.rect6,.rect7,.rect8{
 
+  .rect5,.rect6,.rect7,.rect8{
+		position:absolute;
 		width:50px;
 		height:50px;
-		background:#000;
+		background:#ff0;
 		bottom: 0px;
 		-webkit-animation: mymove2 4s linear infinite;	
 }
+
 .rect5{left:0%;}
 .rect6{left:15%;-webkit-animation-delay:2.2s;}
 .rect7{left:45%;-webkit-animation-delay:0.8s;}
 .rect8{left:77%;-webkit-animation-delay:1.4s;}
+
 
 .footer-block {
   width: 100%;
   background-color:white;
   position: absolute;
 }
+
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%;
