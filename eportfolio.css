@@ -32,13 +32,13 @@ html {
   transition: 0.3s;
 }
 body {
-  color: #1b2a46;
+  color: #525252;
   width: 100%;
   height: 100%;
   overflow-x: hidden; 
 }
 a {
-  color: #1b2a46;
+  color: #525252;
 }
 #internships .container {
     margin-top: 20px;
@@ -97,7 +97,7 @@ a {
   }
   .fa-linkedin {
     background: white;
-    color: #1b2a46;
+    color: #525252;
   }
 
 .image {
@@ -225,7 +225,7 @@ body{margin:0;}
   .text-block {
     height: 100%;
     width: 100%;
-    background-color: #1b2A46;
+    background-color: #525252;
   }
 
   .rect5,.rect6,.rect7,.rect8{
