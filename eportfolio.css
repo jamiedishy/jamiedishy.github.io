@@ -227,3 +227,44 @@ hr:after {
     width:100%;
   }
 }
+
+
+@media only screen and (min-width: 768px) {
+  #nav {
+    display: block;
+  }
+  .nav-custom {
+      background-color: #fff; 
+      padding: 2% 6%;
+      margin: auto; 
+  
+  }
+  hr {
+    display: none;
+    border-top: 1px solid #e9ecef;
+    max-width: 1380px; 
+    position: fixed;
+    width: 1380px;
+    margin-left: 2%;
+    height: 30px;
+  }
+  hr:after { 
+    content: "\2702";
+    display: none; 
+    position: relative; 
+    top: -15px; 
+    left: 70px; 
+    padding: 0 3px; 
+    background: transparent;
+    font-size: 20px; 
+    transform: rotateZ(275deg); /* Standard syntax */
+  }
+  #content {
+    padding: 10% 30%;
+  }
+  .jumbotron {
+    height: 420px;
+    background-color: #fff; 
+    padding: 10% 8%;
+  }
+}
