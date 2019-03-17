@@ -31,10 +31,10 @@
 
   <!-- Navbar -->
 
-  <div style="position: fixed; width: 100%;">
+  <div id="nav" style="position: fixed; width: 100%;">
     <nav class="nav nav-custom" style="background-color: #fff; padding: 15px 0
       0px; margin: auto; margin-left: 16.8%; ">
-      <a class="nav-link active" href="#"><strike>Portfolio</strike></a>
+      <a class="nav-link active" href="index.html"><strike>Portfolio</strike></a>
       <a class="nav-link" style=" text-align: right;" href="aboutme.html">About</a>
       <a href="#footer" class="nav-link" style="padding-right: 60px;">Contact Me</a>
     </nav>
@@ -43,11 +43,10 @@
 
 
   <!-- jumbotron -->
-  <div class="jumbotron jumbotron-fluid" style="background-color: #fff; padding: 15%;
-  margin-left: 3%;">
+  <div class="jumbotron jumbotron-fluid">
     <div style="position: fixed;">
       <h1 id="demo" onclick="myFunction()" class="shaking" style="color: #f00658; font-weight: 300;">Hello
-        <h1 style=" font-size: 72px; font-weight: 300;">
+        <h1>
           My name is Jamie Dishy.
         </h1>
       </h1>
@@ -64,10 +63,10 @@
     <section id="rotating-section">
       <div id="rotating-animation">
         <div>
-          <div class="rect1" ></div>
-          <div class="rect2" ></div>
-          <div class="rect3" ></div>
-          <div class="rect4" ></div>
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
         </div>
       </div>
     </section>
@@ -86,11 +85,9 @@
           }
         </script>
         <br>
-        
         <div class="container">
           <div class="row">
-            <div class="card" style="width: 18rem; height:
-                25rem;">
+            <div class="card">
               <img src="images/IBM.png" alt="IBM" class="image"
                 style="width: 90%; margin-left: 15px;">
               <div class="overlay">
@@ -102,15 +99,14 @@
                       and
                       integration with Docker, SOLR, DB2, OMS, IHS and WAS. Identify
                       defects through log analysis and debugging code.</p>
-                      <p style="font-size: 15px; line-height: normal;">Publication: <a href="https://www.ibm.com/developerworks/community/blogs/wcs/entry/index_health_check_v9?lang=en">Setting Up Index Health Check for Commerce v9</a></p>
-                      <p style="font-size: 15px; line-height: normal;">Certification: <a href="https://www.youracclaim.com/badges/5be0076b-eeb8-4bb4-8ca4-b075e49ab1ee/linked_in_profile" style="color: red;">Certification: IBM Blockchain Essentials</a></p>
+                      <p >Publication: <a href="https://www.ibm.com/developerworks/community/blogs/wcs/entry/index_health_check_v9?lang=en">Setting Up Index Health Check for Commerce v9</a></p>
+                      <p >Certification: <a href="https://www.youracclaim.com/badges/5be0076b-eeb8-4bb4-8ca4-b075e49ab1ee/linked_in_profile" style="color: red;">Certification: IBM Blockchain Essentials</a></p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="card" style="width: 18rem; height:
-                25rem;">
+            <div class="card">
               <img src="images/dishon.png" alt="DISHON" class="image" style="margin-top: -10px;">
               <div class="overlay">
                 <div class="text-block">
@@ -124,8 +120,7 @@
               </div>
             </div>
 
-            <div class="card" style="width: 18rem; height:
-                25rem;">
+            <div class="card">
               <img src="images/rbc.png" alt="RBC" class="image"
                 style="width: 90%; margin-left: 15px;">
               <div class="overlay">
@@ -156,8 +151,7 @@
         <br>
         <div class="container">
           <div class="row">
-            <div class="card" style="width: 18rem; height:
-        25rem;">
+            <div class="card">
               <img src="images/conuhacks.png" alt="ConUHacks" class="image"
                 style="margin-top: -10px;">
               <div class="overlay">
@@ -176,8 +170,7 @@
               </div>
             </div>
 
-            <div class="card" style="width: 18rem; height:
-        25rem;">
+            <div class="card">
               <img src="images/uoft.png" alt="UofTHacks" class="image" style="margin-top: -10px;">
               <div class="overlay">
                 <div class="text-block">
@@ -194,8 +187,7 @@
               </div>
             </div>
 
-            <div class="card" style="width: 18rem; height:
-                  25rem;">
+            <div class="card">
               <img src="images/starterhacks.png" alt="StarterHacks" class="image">
               <div class="overlay">
                 <div class="text-block">
@@ -226,8 +218,7 @@
         <br>
         <div class="container">
           <div class="row">
-            <div class="card" style="width: 18rem; height:
-                  25rem;">
+            <div class="card">
               <img src="images/Lassonde.png"
                 alt="Lassonde School of Engineering: Software Engineering" class="image">
               <div class="overlay">
@@ -244,8 +235,7 @@
               </div>
             </div>
 
-            <div class="card" style="width: 18rem; height:
-              25rem;">
+            <div class="card">
               <img src="images/YorkuLogo.png" alt="York University: Economics" class="image"
                 style="margin-top: -10px;">
               <div class="overlay">
@@ -260,8 +250,7 @@
               </div>
             </div>
 
-            <div class="card" style="width: 18rem; height:
-              25rem;">
+            <div class="card">
               <img src="images/kings.png" alt="Kings College: Foundation Year Program" class="image"
                 style="margin-top: -10px;">
               <div class="overlay">
@@ -286,8 +275,8 @@
 
   <!-- footer -->
 
-  <section id="footer">
-    <footer class="page-footer">
+  <section id="footer" class="container footer-block">
+    <footer>
       <div class="footer-style">
         <h2 style=" font-weight: 100;">Have feedback?</h2>
         <p>Let's Chat! Read
