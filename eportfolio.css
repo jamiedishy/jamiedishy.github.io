@@ -1,15 +1,21 @@
 html {
   scroll-behavior: smooth;
+  overflow-x:hidden;
 }
-
+#nav {
+  display: none;
+}
 .nav-custom {
     background-color: #e9ecef;
 }
 .jumbotron {
-  min-height: 600px;
+  height: 420px;
+  background-color: #fff; 
+  padding: 5%;
 }
 .jumbotron h1 {
-  font-size: 72px; 
+  font-size: 60px; 
+  font-weight: 300;
 }
 .jumbotron h1:hover {
   cursor: pointer;
@@ -20,7 +26,7 @@ html {
     clear: both;
 }
 .wrap {
-  padding: 0 13.5%;
+  padding: 0%;
     margin-right: auto;
     margin-left: auto;
     font-weight: 100;
@@ -31,52 +37,35 @@ html {
   transition: 0.3s;
 }
 body {
-  color: #1b2a46;
+  color: #525252;
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
   overflow-x: hidden; 
 }
 a {
-  color: #1b2a46;
+  color: #525252;
 }
-#internships .container {
-    margin-top: 20px;
-    margin-right: 10%;
-    margin-left: 11.7%;
-  
+.container {
+  padding: 5% 5%;
   }
-  #hackathons .container {
-    margin-top: 20px;
-    margin-right: 10%;
-    margin-left: 11.7%;
-  
-  }
-  #education .container {   
-    margin-top: 20px;
-    margin-right: 10%;
-    margin-left: 11.7%;
-  
-  }
+
 #content-background {
   background-color: #f5f5f5;
-  max-width: 1380px;
+  max-width: 100%;
   margin: auto;
 }
 #content {
-  padding: 100px 60px;
+  padding: 10% 20%;
 }
 .nav-link:hover {
   color: #f00658;
   transition: 0.3s;
 }
 #footer {
-    padding: 5% 17.5%;
+    padding: 10% 10%;
     
 }
 .footer-style {
-    padding: 1%;
     font-size: 2em; 
     line-height: 1.5;
     font-weight: 100;
@@ -94,7 +83,7 @@ a {
   }
   .fa-linkedin {
     background: white;
-    color: #1b2a46;
+    color: #525252;
   }
 
 .image {
@@ -116,10 +105,10 @@ a {
   }
   .text {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     font-weight: 100; 
-    padding: 40px 20px;
+    padding: 5%;
   }
   .text h2 {
     font-weight: 100;
@@ -132,7 +121,8 @@ a {
   }
  .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  margin-left: 2%;
+  width: 18rem; 
+  height: 25rem;
   }
   .card:hover .overlay {
     opacity: 1;
@@ -174,6 +164,7 @@ a {
 }
 
 hr {
+
   border-top: 1px solid #e9ecef;
   max-width: 1380px; 
   position: fixed;
@@ -193,15 +184,14 @@ hr:after {
   transform: rotateZ(275deg); /* Standard syntax */
 }
 
-body{margin:0;}
 #rotating-section{ 
         height: 200px;
-        overflow:hidden;
+        overflow-x:hidden;
 				}
 .rect1,.rect2,.rect3,.rect4{
 		position:absolute;
-		width:100px;
-		height:100px;
+		width:50px;
+		height:50px;
 		bottom: 0px;
 		background: yellow;
 		-webkit-animation: mymove2 4s linear infinite;
@@ -223,23 +213,8 @@ body{margin:0;}
   .text-block {
     height: 100%;
     width: 100%;
-    background-color: #1b2A46;
+    background-color: #525252;
   }
-
-  .rect5,.rect6,.rect7,.rect8{
-		position:absolute;
-		width:50px;
-		height:50px;
-		background:#ff0;
-		bottom: 0px;
-		-webkit-animation: mymove2 4s linear infinite;	
-}
-
-.rect5{left:0%;}
-.rect6{left:15%;-webkit-animation-delay:2.2s;}
-.rect7{left:45%;-webkit-animation-delay:0.8s;}
-.rect8{left:77%;-webkit-animation-delay:1.4s;}
-
 
 .footer-block {
   width: 100%;
@@ -250,3 +225,5 @@ body{margin:0;}
 @media screen and (max-width:800px) {
   .left, .main, .right {
     width:100%;
+  }
+}
