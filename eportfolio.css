@@ -206,7 +206,7 @@ hr:after {
 @-webkit-keyframes mymove2{
 	
 	0%{	transform:rotate(0deg);opacity:1;}
-	100%{transform:rotate(540deg);opacity:0;bottom:340px;}
+	100%{transform:rotate(540deg);opacity:0;bottom:500px;}
 	}
 
 
@@ -295,8 +295,32 @@ background: yellow;
 
 @media only screen and (min-width: 1024px) {
   .jumbotron {
-    height: 600px;
+    height: 500px;
     background-color: #fff; 
-    padding: 14% 8% 10%;
+    padding: 14% 10% 10%;
   }
+  #rotating-section{ 
+    height: 200px;
+    overflow-x:hidden;
+    }
+.rect1,.rect2,.rect3,.rect4{
+position:absolute;
+width:100px;
+height:100px;
+bottom: 600px;
+background: yellow;
+-webkit-animation: mymove2 4s linear infinite;
+}
+
+.rect1{left:50%;}
+.rect2{left:10%;-webkit-animation-delay:0.3s;}
+.rect3{left:25%;-webkit-animation-delay:2s;}
+.rect4{left:85%;-webkit-animation-delay:1s;}
+
+
+@-webkit-keyframes mymove2{
+
+0%{	transform:rotate(0deg);opacity:1;}
+100%{transform:rotate(540deg);opacity:0;bottom:1000px;}
+}
 }
