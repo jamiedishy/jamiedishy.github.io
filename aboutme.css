@@ -149,5 +149,17 @@ h5:hover {
     #bio {
         padding: 5% 0%;
     }
+}
+@media only screen and (min-width: 1600px) {
+    #content-background-aboutme {
+        max-width: 95%;
+        height: 1200px;
+    }
+    .row {
+        padding: 4% 2%;
+    }
+    #bio {
+        padding: 5% 2%;
+    }
 
 }

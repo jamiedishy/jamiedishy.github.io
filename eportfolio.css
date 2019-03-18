@@ -416,4 +416,25 @@ background: yellow;
       padding: 5% 17%;
   }
   }
+  @media only screen and (min-width: 1400px) {
+    .container {
+      padding: 5% 7%;
+      }
+      #content-background {
+        max-width: 95%;
+      }
+  }
+  @media only screen and (min-width: 1600px) {
+    .container {
+      padding: 5% 1%;
+      }
+    .jumbotron {
+      padding: 10% 17% 10%;
+    }
+    .card {
+      margin-left: 4%;
+          }
+  
+
+  }
 
