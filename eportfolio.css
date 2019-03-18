@@ -323,4 +323,24 @@ background: yellow;
 0%{	transform:rotate(0deg);opacity:1;}
 100%{transform:rotate(540deg);opacity:0;bottom:1000px;}
 }
+#content {
+  padding: 10% 4%;
+}
+.container {
+  padding: 5% 4%;
+  }
+  .wrap {
+    padding: 0% 4%;
+      margin-right: auto;
+      margin-left: auto;
+      font-weight: 100;
+      cursor: pointer;
+  }
+  #footer {
+    padding: 10% 8%;
+    line-height: 1.5;
+}
+.card {
+  margin-left: 1%;
+  }
 }
