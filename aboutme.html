@@ -22,64 +22,19 @@
         integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="eportfolio.css">
+    <link rel="stylesheet" type="text/css" href="aboutme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="https://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <style>
-        h2 {
-            max-width: 850px;
-            font-size: 30px;
-            font-weight: 200;
-        }
-        .initiallyHidden {
-            display: none;
-        }
-
-        .jumbotron {
-            line-height: normal;
-        }
-
-        #bio {
-            padding: 20px 170px;
-        }
-        #jumbotron img {
-            position: fixed;
-            margin-left: 45%;
-            animation: shake 8s;
-            animation-iteration-count: infinite;
-            transform: rotate(20deg);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-        }
-        .column {
-            float: left;
-            width: 33.33%;
-            padding: 10px;
-            padding: 5% 0%;
-        }
-        #content-background-aboutme {
-            background-color: #f5f5f5;
-            max-width: 95%;
-            height: 600px;
-            margin: auto;
-            border-top: 1px solid #e9ecef;
-            border-bottom: 1px solid #e9ecef;
-        }
-        h5:hover {
-            color: red;
-            transition: 0.3s;
-        }
-    </style>
 </head>
 
 <body>
 
     <!-- Navbar -->
 
-    <div style="position: fixed; width: 100%;">
-        <nav class="nav nav-custom" style="background-color: #fff; padding:
-                15px 0
-                0px; margin: auto; margin-left: 16.8%;">
+    <div id="nav" >
+        <nav class="nav nav-custom">
             <a class="nav-link active" href="index.html">Portfolio</a>
             <a class="nav-link" style="text-align: right;" href="aboutme.html"><strike>About</strike></a>
             <a href="#footer" class="nav-link" style="padding-right: 60px;">Contact
@@ -89,8 +44,7 @@
     </div>
 
     <!-- jumbotron -->
-    <div id="jumbotron" class="jumbotron jumbotron-fluid" style="background-color: #fff;
-            padding: 15%; margin-left: 3%; ">
+    <div id="jumbotron" class="jumbotron jumbotron-fluid">
         <div style="position: fixed;">
             <img src="images/bio.png" alt="Frame-5">
 
@@ -135,12 +89,14 @@
     <!-- bio -->
 
     <section id="content-background-aboutme" style="position: relative; font-weight: 100;">
-        <section id="content">
+        <div class="container">
+        <section id="content-aboutme">
             <section id="bio">
                 <h4 style="line-height: 1.5; font-weight: 200;">I am in my third year of software engineering.<br>I love learning and
                     approach new topics with
                     conscientiousness and self-discipline.</h4>
                     <p>Check out my publication on <a style="color: red" href="https://www.ibm.com/developerworks/community/blogs/wcs/entry/index_health_check_v9?lang=en">Index Health Check!</a></p>
+                    <div class="row">
                 <div class="column">
                     <h5>Toolbox</h5>
                     <ul>
@@ -153,6 +109,8 @@
                         <li>MATLAB</li>
                     </ul>
                 </div>
+            </div>
+            <div class="row">
                 <div class="column">
                     <h5>Skills</h5>
                     <ul>
@@ -162,6 +120,8 @@
                         <li>Wireframing</li>
                     </ul>
                 </div>
+            </div>
+            <div class="row">
                 <div class="column">
                     <h5>Honours & Certifications</h5>
                     <ul>
@@ -176,10 +136,11 @@
                         <li>Golden Key Recognition (2015-2016)</li>
                     </ul>
                 </div>
-
+            </div>
 
             </section>
         </section>
+    </div>
     </section>
 
     <!-- footer -->
@@ -192,11 +153,13 @@
                     <a href="aboutme.html">about me</a>, follow me, or contact me
                     below!</h2>
             </div>
+
             <a href="https://www.linkedin.com/in/jamie-dishy-5ba619b1" class="fa
                     fa-linkedin" style="font-size: 30px; transition:
-                    0.3s; margin-left: 1%;"></a>
+                    0.3s;"></a>
             <a href="https://github.com/jamiedishy" class="fa fa-github"
                 style="font-size: 30px; margin-left: 3%; transition: 0.3s;"></a>
+  
         </footer>
     </section>
 
