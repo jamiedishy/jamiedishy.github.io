@@ -132,6 +132,22 @@ h5:hover {
     #bio {
         padding: 5% 0%;
     }
-
+}
+@media only screen and (min-width: 1360px) {
+    .nav-custom {
+        padding: 2% 15%;
+        margin: auto; 
+    }
+    .jumbotron {
+        height: 450px;
+        padding: 5% 17%;
+        background-color: #fff;
+    }
+    .row {
+        padding: 2% 2%;
+    }
+    #bio {
+        padding: 5% 0%;
+    }
 
 }
