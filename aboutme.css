@@ -112,7 +112,7 @@ h5:hover {
 }
 @media only screen and (min-width: 1280px) {
     .jumbotron {
-        height: 500px;
+        height: 450px;
         line-height: normal;
         padding: 5% 15%;
         background-color: #fff;
