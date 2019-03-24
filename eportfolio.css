@@ -209,7 +209,7 @@ hr:after {
 @-webkit-keyframes mymove2{
 	
 	0%{	transform:rotate(0deg);opacity:1;}
-	100%{transform:rotate(540deg);opacity:0;bottom:400px;}
+	100%{transform:rotate(540deg);opacity:0;bottom:650px;}
 	}
 
 
