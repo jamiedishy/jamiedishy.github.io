@@ -356,7 +356,7 @@ background: yellow;
 position:absolute;
 width:100px;
 height:100px;
-bottom: 0px;
+bottom: -100px;
 background: yellow;
 -webkit-animation: mymove2 5s linear infinite;
 }
