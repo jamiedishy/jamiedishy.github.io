@@ -27,12 +27,28 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="eportfolio.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js"></script>
+  <script>
+    function setup() {
+      var canvas = createCanvas(2000, 500);
+      canvas.parent('nav');
+    }
+    function draw() {
+      if (mouseIsPressed) {
+        fill(0);
+      } else {
+        fill(255);
+      }
+      ellipse(mouseX, mouseY, 300, 300);
+    }
+  </script>
+
 </head>
 
 <body>
-
   <!-- Navbar -->
-
   <div id="nav" style="position: fixed; width: 100%;">
     <nav class="nav nav-custom">
       <a class="nav-link active" href="index.html"><strike>Portfolio</strike></a>
@@ -44,7 +60,8 @@
 
 
   <!-- jumbotron -->
-  <div class="jumbotron jumbotron-fluid">
+
+  <div class="jumbotron jumbotron-fluid" id="testing">
     <div style="position: fixed;">
       <h1 id="demo" onclick="myFunction()" class="shaking" style="color: #f00658; font-weight: 300;">Hello
         <h1>
@@ -73,9 +90,8 @@
           </div>
         </section>
     -->
-
   </div>
-
+  </div>
 
   <section id="content-background" style="position: relative;">
     <section id="content">
@@ -347,8 +363,7 @@
   </section>
 
   <!-- footer -->
-
-  <section id="footer" class="container footer-block">
+  <section id="footer" class=" footer-block">
     <footer>
       <div class="footer-style">
         <h2 style=" font-weight: 100;">Have feedback?</h2>
@@ -375,6 +390,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
