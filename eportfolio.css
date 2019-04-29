@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
   overflow-x:hidden;
 }
+.carousel-control-next {
+  margin-right: -50px;
+}
+.carousel-control-prev {
+  margin-left: -120px;
+}
 #nav {
   display: none;
 
