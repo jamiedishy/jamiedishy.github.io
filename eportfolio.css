@@ -3,10 +3,10 @@ html {
   overflow-x:hidden;
 }
 .carousel-control-next {
-  margin-right: -50px;
+  margin-right: -70px;
 }
 .carousel-control-prev {
-  margin-left: -120px;
+  margin-left: -140px;
 }
 #nav {
   display: none;
@@ -475,7 +475,30 @@ background: yellow;
     .carousel-control-prev {
       margin-left: -130px;
     }
+    body {
+      background-color: white;
+    }
+    .nav-custom {
+      padding: 2% 16%;
   }
+    .jumbotron {
+      background-color: white;
+    }
+    #footer{
+      width: 2000px;
+    }
+    #content-background {
+      background-color: #f5f5f5;
+    }
+   .text-block{
+     background-color: #525252;
+   }
+   .jumbotron {
+    padding: 14% 0% 10% 17%;
+  }
+
+  }
+
 
   @media only screen and (min-width: 1600px) {
     .container {
