@@ -94,7 +94,7 @@ h5:hover {
     }
 }
 @media only screen and (min-width: 1280px) {
-    #jumbotron img {
+     #jumbotron img {
         position: fixed;
         margin-left: 50%;
         animation: shake 8s;
@@ -106,7 +106,7 @@ h5:hover {
         display: block;
     }
     #jumbotron h2 {
-        padding: 0% 20% 0% 0%;
+        padding: 0% 30% 0% 0%;
     }
     .jumbotron {
         height: 500px;
@@ -121,7 +121,7 @@ h5:hover {
     }
     #content-background-aboutme {
         max-width: 95%;
-        height: 970px;
+        height: 1050px;
     }
     .row {
         padding: 2% 2%;
