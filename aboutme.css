@@ -31,7 +31,7 @@ h2 {
 #content-background-aboutme {
     background-color: #f5f5f5;
     max-width: 100%;
-    height: 1000px;
+    height: 1100px;
     margin: auto;
 }
 h5:hover {
@@ -60,7 +60,7 @@ h5:hover {
     #content-background-aboutme {
         background-color: #f5f5f5;
         max-width: 100%;
-        height: 1100px;
+        height: 1150px;
         margin: auto;
     }
 
@@ -75,7 +75,7 @@ h5:hover {
     #content-background-aboutme {
         background-color: #f5f5f5;
         max-width: 100%;
-        height: 950px;
+        height: 1000px;
         margin: auto;
     }
     #nav {
@@ -121,7 +121,7 @@ h5:hover {
     }
     #content-background-aboutme {
         max-width: 95%;
-        height: 1050px;
+        height: 1100px;
     }
     .row {
         padding: 2% 2%;
@@ -150,7 +150,7 @@ h5:hover {
 @media only screen and (min-width: 1440px) {
     #content-background-aboutme {
         max-width: 95%;
-        height: 1000px;
+        height: 1150px;
     }
     .jumbotron {
         height: 550px;
