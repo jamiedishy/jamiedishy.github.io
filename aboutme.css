@@ -11,6 +11,7 @@ h2 {
     line-height: normal;
     padding: 5%;
     background-color: #fff;
+    height: 300px;
 }
 .jumbotron img {
     display: none;
@@ -56,6 +57,7 @@ h5:hover {
         line-height: normal;
         padding: 20% 8%;
         background-color: #fff;
+        height: 420px;
     }
     #content-background-aboutme {
         background-color: #f5f5f5;
@@ -136,9 +138,12 @@ h5:hover {
         margin: auto; 
     }
     .jumbotron {
-        height: 500px;
+        height: 550px;
         padding: 14% 17% 10%;
         background-color: #fff;
+    }
+    #jumbotron h2 {
+        padding: 0% 0% 0% 0%;
     }
     .row {
         padding: 2% 2%;
@@ -153,15 +158,18 @@ h5:hover {
         height: 1150px;
     }
     .jumbotron {
-        height: 550px;
+        height: 570px;
         padding: 14% 17% 10%;
         background-color: #fff;
     }
     #jumbotron h2 {
-        padding: 0% 20% 0% 0%;
+        padding: 0% 0% 0% 0%;
     }
 }
 @media only screen and (min-width: 1600px) {
+    .jumbotron {
+        height: 650px;
+    }
     #content-background-aboutme {
         max-width: 95%;
         height: 1300px;
@@ -175,7 +183,6 @@ h5:hover {
 }
 @media only screen and (min-width: 1900px) {
     .jumbotron {
-        height: 600px;
         padding: 12% 26%;
         background-color: #fff;
     }
