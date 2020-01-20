@@ -1,0 +1,24 @@
+{
+  "name": "jamiedishy.github.io",
+  "version": "1.0.0",
+  "description": "My eportfolio lists personal projects, internships and my bio. Check it out! http://jamiedishy.com/",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamiedishy/jamiedishy.github.io.git"
+  },
+  "author": "Jamie Dishy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamiedishy/jamiedishy.github.io/issues"
+  },
+  "homepage": "https://github.com/jamiedishy/jamiedishy.github.io#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
