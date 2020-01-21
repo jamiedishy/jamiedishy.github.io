@@ -1,18 +1,6 @@
 <%- include("header") %>
     <link rel="stylesheet" type="text/css" href="css/aboutme.css">
 
-<body>
-    <!-- Navbar -->
-    <div id="nav" style="position: fixed; width: 100%;">
-        <nav class="nav nav-custom">
-            <a class="nav-link active" href="/">Portfolio</a>
-            <a class="nav-link" style=" text-align: right;" href="/about"><strike>About</strike></a>
-            <a class="nav-link" style=" text-align: right;" href="Dishy_Jamie_Resume.pdf">Resume</a>
-            <a href="#footer" class="nav-link" style="padding-right: 60px;">Contact Me</a>
-        </nav>
-        <hr style="content: '\002702';" id="object">
-    </div>
-
 
     <!-- jumbotron -->
     <div id="jumbotron" class="jumbotron jumbotron-fluid">
@@ -20,7 +8,7 @@
             <img src="images/bio.png" alt="Frame-5">
 
             <h1 id="demo" onclick="myFunction()" class="shaking"
-                style="color: #f00658; font-weight: 300;  cursor: pointer;">I'm Jamie!
+                style="color: #f00658; font-weight: 300;  cursor: pointer;"><%=placeHolder%>
             </h1>
             <br>
             <script>
@@ -79,15 +67,9 @@
                         <div class="column">
                             <h5>Toolbox</h5>
                             <ul>
-                                <li>Java</li>
-                                <li>ReactJS</li>
-                                <li>JavaScript </li>
-                                <li>NodeJS</li>
-                                <li>HTML/CSS</li>
-                                <li>Figma</li>
-                                <li>Verilog</li>
-                                <li>BASH</li>
-                                <li>MATLAB</li>
+                              <% languages.forEach(function(lan) { %>
+                                    <li><%= lan %></li>
+                              <% }) %>
                             </ul>
                         </div>
                     </div>
@@ -95,10 +77,9 @@
                         <div class="column">
                             <h5>Skills</h5>
                             <ul>
-                                <li>Agile</li>
-                                <li>Test-Driven Development</li>
-                                <li>Web Design</li>
-                                <li>Wireframing</li>
+                              <% skills.forEach(function(skill) { %>
+                                    <li><%= skill %></li>
+                              <% }) %>
                             </ul>
                         </div>
                     </div>

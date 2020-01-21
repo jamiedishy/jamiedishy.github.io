@@ -1,51 +1,35 @@
 <%- include("header") %>
 
-<body>
-  <!-- Navbar -->
-  <div id="nav" style="position: fixed; width: 100%;">
-    <nav class="nav nav-custom">
-      <a class="nav-link active" href="/"><strike>Portfolio</strike></a>
-
-      <a class="nav-link" style=" text-align: right;" href="/about">About</a>
-
-      <a class="nav-link" style=" text-align: right;" href="Dishy_Jamie_Resume.pdf">Resume</a>
-      <a href="#footer" class="nav-link" style="padding-right: 60px;">Contact Me</a>
-    </nav>
-    <hr style="content: '\002702';" id="object">
-  </div>
-
-
-  <!-- jumbotron -->
-
-  <div class="jumbotron jumbotron-fluid" id="testing">
-    <div style="position: fixed;">
-      <h1 id="demo" onclick="myFunction()" class="shaking" style="color: #f00658; font-weight: 300;">Hi!
-        <h1>
-          My name is Jamie Dishy
-        </h1>
+<!-- jumbotron -->
+ <div class="jumbotron jumbotron-fluid" id="testing">
+  <div style="position: fixed;">
+    <h1 id="demo" onclick="myFunction()" class="shaking" style="color: #f00658; font-weight: 300;">Hi!
+      <h1>
+        <%= placeHolder %>
       </h1>
-      <h2 style="max-width: 690px; font-weight: 100;">I study software engineering</h2>
-    </div>
-    <script>
-      function myFunction() {
-        document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "!";
-      }
-    </script>
+    </h1>
+    <h2 style="max-width: 690px; font-weight: 100;"><%= placeHolder2 %></h2>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "!";
+    }
+  </script>
 
-    <!-- 
-        <section id="rotating-section">
-          <div id="rotating-animation">
-            <div>
-              <div class="rect1"></div>
-              <div class="rect2"></div>
-              <div class="rect3"></div>
-              <div class="rect4"></div>
-            </div>
+  <!-- 
+      <section id="rotating-section">
+        <div id="rotating-animation">
+          <div>
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
           </div>
-        </section>
-    -->
-  </div>
-  </div>
+        </div>
+      </section>
+  -->
+</div>
+</div>
 
   <section id="content-background" style="position: relative;">
     <section id="content">
@@ -342,19 +326,3 @@
   </section>
 
 <%-include("footer")%>
-  </section>
-
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-</body>
-
-</html>

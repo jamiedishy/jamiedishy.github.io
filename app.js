@@ -3,15 +3,24 @@ const app = express();
 const port = 3000;
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const fs = require("fs");
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => res.render("index"));
+const forIndex= "My name is Jamie Dishy";
+const forIndex2 = "I study software engineering";
+const forAbout = "I'm Jamie!";
+const languages = ["Java", "ReactJS", "JavaScript", "NodeJS", "HTML/CSS", "Figma", "Verilog", "BASH"];
+const skills = ["Agile", "Test-Driven Development", "Web Design", "Wireframing"];
+
+app.get('/', function(req, res) {
+    res.render("index", {placeHolder: forIndex, placeHolder2: forIndex2})
+});
 
 app.get("/about", function(req, res) {
-    res.render("aboutme");
+    res.render("aboutme", {placeHolder: forAbout, languages: languages, skills: skills});
 })
 
 
