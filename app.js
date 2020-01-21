@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const fs = require("fs");
@@ -24,4 +23,4 @@ app.get("/about", function(req, res) {
 })
 
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(process.env.PORT || 3000, () => console.log(`Example app listening on port 3000!`))
