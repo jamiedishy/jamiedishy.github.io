@@ -11,8 +11,9 @@ app.set('view engine', 'ejs');
 const forIndex= "My name is Jamie Dishy";
 const forIndex2 = "I study software engineering";
 const forAbout = "I'm Jamie!";
-const languages = ["Java", "Docker", "MongoDB", "React", "JavaScript", "Node.js", "HTML/CSS", "Figma", "Verilog", "BASH"];
-const skills = ["Agile", "Test-Driven Development", "Web Development", "Wireframing"];
+const languages = ["Java", "C", "Docker", "MongoDB", "React", "JavaScript", "Node.js", "HTML/CSS", "Figma", "Verilog", "BASH"];
+const skills = ["Agile", "Test-Driven Development", "Web Design", "Wireframing"];
+
 
 app.get('/', function(req, res) {
     res.render("index", {placeHolder: forIndex, placeHolder2: forIndex2})
