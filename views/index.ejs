@@ -1,0 +1,47 @@
+<%- include("header") %>
+
+<!-- jumbotron -->
+ <div class="jumbotron jumbotron-fluid" id="testing">
+  <div style="position: fixed;">
+    <h1 id="demo" onclick="myFunction()" class="shaking" style="color: #f00658; font-weight: 300;">Hi!
+      <h1>
+        <%= placeHolder %>
+      </h1>
+    </h1>
+    <h2 style="max-width: 690px; font-weight: 100;"><%= placeHolder2 %></h2>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "!";
+    }
+  </script>
+
+  <!-- 
+      <section id="rotating-section">
+        <div id="rotating-animation">
+          <div>
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+          </div>
+        </div>
+      </section>
+  -->
+</div>
+</div>
+
+  <section id="content-background" style="position: relative;">
+    <section id="content">
+
+      <%-include("internships")%>
+
+      <%-include("hackathons")%>
+
+      <%-include("education")%>
+
+    </section>
+  </section>
+  </section>
+
+<%-include("footer")%>
