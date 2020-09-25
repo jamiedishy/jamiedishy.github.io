@@ -1,10 +1,5 @@
 <template>
   <div class="about">
-    <b-navbar variant="faded">
-      <b-navbar-brand to="/">
-        <font-awesome-icon class="c-cream" icon="coffee" />
-      </b-navbar-brand>
-    </b-navbar>
     <div class="mt-3 home">
       <b-row>
         <b-col>

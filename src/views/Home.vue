@@ -1,56 +1,67 @@
 <template>
-  <div class="mt-5 home">
+  <div class="home">
     <b-row>
       <b-col>
         <header class="text-center">
-          <img alt="coffee cup" src="../assets/coffee.png" />
+          <img
+            @mouseover="change4 = true"
+            @mouseleave="change4 = false"
+            alt="coffee cup"
+            src="../assets/coffee.png"
+          />
           <h1 class="display-3">Hi I'm Jamie!</h1>
           <p class="my-3 lead ">
             I'm a passionate, curious and driven software engineering student
-            who can always be caught with a lipstick-stained coffee cup in hand.
+            who can always be caught with a
+            <span :class="{ 'c-red': change4, 'c-cream': !change4 }"
+              >lipstick-stained</span
+            >
+            coffee cup in hand.
           </p>
+          <hr class="my-4 header-rule" />
         </header>
-        <section class="my-5">
-          <ul>
-            <li
-              @mouseover="change1 = true"
-              @mouseleave="change1 = false"
-              class="lead mb-2"
-            >
-              <b-link
-                :class="{ 'c-red': change1, 'c-cream': !change1 }"
-                class="c-cream"
-                to="/about/internship"
+
+        <section class="text-center mt-2 mb-5">
+          <b-row>
+            <b-col>
+              <span
+                @mouseover="change1 = true"
+                @mouseleave="change1 = false"
+                class="lead"
               >
-                <font-awesome-icon icon="coffee" class="mr-2" />Internships
-              </b-link>
-            </li>
-            <li
-              @mouseover="change2 = !change2"
-              @mouseleave="change2 = !change2"
-              class="lead mb-2"
-            >
-              <b-link
-                :class="{ 'c-red': change2, 'c-cream': !change2 }"
-                class="c-cream"
-                to="/about/projects"
+                <b-link
+                  :class="{ 'c-red': change1, 'c-cream': !change1 }"
+                  to="/about/internship"
+                >
+                  <font-awesome-icon icon="coffee" class="mr-2" />Internships
+                </b-link>
+              </span>
+              <span
+                @mouseover="change2 = true"
+                @mouseleave="change2 = false"
+                class="lead mr-2 ml-2"
               >
-                <font-awesome-icon icon="coffee" class="mr-2" />Projects
-              </b-link>
-            </li>
-            <li
-              @mouseover="change3 = !change3"
-              @mouseleave="change3 = !change3"
-              class="lead mb-2"
-            >
-              <b-link
-                :class="{ 'c-red': change3, 'c-cream': !change3 }"
-                to="/about/education"
+                <b-link
+                  :class="{ 'c-red': change2, 'c-cream': !change2 }"
+                  to="/about/internship"
+                >
+                  <font-awesome-icon icon="coffee" class="mr-2" />Projects
+                </b-link></span
               >
-                <font-awesome-icon icon="coffee" class="mr-2" />Education
-              </b-link>
-            </li>
-          </ul>
+              <span
+                @mouseover="change3 = true"
+                @mouseleave="change3 = false"
+                class="lead"
+              >
+                <b-link
+                  :class="{ 'c-red': change3, 'c-cream': !change3 }"
+                  to="/about/internship"
+                >
+                  <font-awesome-icon icon="coffee" class="mr-2" />Education
+                </b-link></span
+              >
+            </b-col>
+          </b-row>
         </section>
       </b-col>
     </b-row>
@@ -71,7 +82,8 @@ export default {
     return {
       change1: false,
       change2: false,
-      change3: false
+      change3: false,
+      change4: false
     };
   },
   methods: {}
@@ -79,36 +91,35 @@ export default {
 </script>
 
 <style scoped>
-img {
-  width: 15%;
-}
 .c-red {
   color: #ea4c4c;
-}
-.bg-blue {
-  background-color: rgb(14, 36, 49);
-  border-color: #f9dc5c;
-}
-div {
-  color: #f9dc5c;
+  text-decoration: none;
 }
 .c-cream {
   color: #f9dc5c;
   text-decoration: none;
 }
-ul {
-  list-style-type: none;
+img {
+  width: 15%;
+}
+.bg-blue {
+  background-color: rgb(14, 36, 49);
+  border-color: #f9dc5c;
 }
 .coffee {
   list-style-image: url("../assets/coffee.png");
   width: 10%;
 }
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
   opacity: 0;
+}
+.header-rule {
+  width: 8rem;
+  border: 0;
+  border-top: 4px solid #f9dc5c;
 }
 </style>
