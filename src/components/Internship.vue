@@ -83,11 +83,11 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #f9dc5c;
+  color: #F5E4C3;
 }
 
 h4 {
-  color: #f9dc5c;
+  color: #F5E4C3;
 }
 .carousel-view {
   display: flex;
@@ -109,7 +109,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.1em dashed #f9dc5c;
+  border: 0.1em dashed #F5E4C3;
   transition: transform 0.3s ease-in-out;
 }
 .slide:first-of-type {

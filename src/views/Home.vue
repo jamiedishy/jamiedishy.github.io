@@ -9,26 +9,22 @@
             alt="coffee cup"
             src="../assets/coffee.png"
           />
-          <h1 class="display-3">Hi I'm Jamie!</h1>
-          <p class="my-3 lead ">
+          <h1 class="mt-2 display-3">Hi I'm Jamie!</h1>
+          <p class="my-3">
             I'm a passionate, curious and driven software engineering student
-            who can always be caught with a
+            who's notorious for
             <span :class="{ 'c-red': change4, 'c-cream': !change4 }"
               >lipstick-stained</span
             >
-            coffee cup in hand.
+            coffee cups.
           </p>
-          <hr class="my-4 header-rule" />
+          <hr class="my-5 header-rule" />
         </header>
 
         <section class="text-center mt-2 mb-5">
           <b-row>
             <b-col>
-              <span
-                @mouseover="change1 = true"
-                @mouseleave="change1 = false"
-                class="lead"
-              >
+              <span @mouseover="change1 = true" @mouseleave="change1 = false">
                 <b-link
                   :class="{ 'c-red': change1, 'c-cream': !change1 }"
                   to="/about/internship"
@@ -39,23 +35,19 @@
               <span
                 @mouseover="change2 = true"
                 @mouseleave="change2 = false"
-                class="lead mr-2 ml-2"
+                class="mr-2 ml-2"
               >
                 <b-link
                   :class="{ 'c-red': change2, 'c-cream': !change2 }"
-                  to="/about/internship"
+                  to="/about/projects"
                 >
                   <font-awesome-icon icon="coffee" class="mr-2" />Projects
                 </b-link></span
               >
-              <span
-                @mouseover="change3 = true"
-                @mouseleave="change3 = false"
-                class="lead"
-              >
+              <span @mouseover="change3 = true" @mouseleave="change3 = false">
                 <b-link
                   :class="{ 'c-red': change3, 'c-cream': !change3 }"
-                  to="/about/internship"
+                  to="/about/education"
                 >
                   <font-awesome-icon icon="coffee" class="mr-2" />Education
                 </b-link></span
@@ -96,15 +88,11 @@ export default {
   text-decoration: none;
 }
 .c-cream {
-  color: #f9dc5c;
+  color: #f5e4c3;
   text-decoration: none;
 }
 img {
-  width: 15%;
-}
-.bg-blue {
-  background-color: rgb(14, 36, 49);
-  border-color: #f9dc5c;
+  width: 20%;
 }
 .coffee {
   list-style-image: url("../assets/coffee.png");
@@ -120,6 +108,6 @@ img {
 .header-rule {
   width: 8rem;
   border: 0;
-  border-top: 4px solid #f9dc5c;
+  border-top: 4px solid #f5e4c3;
 }
 </style>

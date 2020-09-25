@@ -85,7 +85,7 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #f9dc5c;
+  color: #f5e4c3;
 }
 
 .carousel-view {
