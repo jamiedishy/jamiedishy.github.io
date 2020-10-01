@@ -1,24 +1,97 @@
 <template>
-  <div class="about">
+  <div>
     <b-row>
       <b-col>
-        <h1 class="ml-3 display-3">Internships</h1>
-        <!-- <carousel /> -->
-        <div class="carousel-view">
-          <transition-group class="carousel" tag="div">
-            <div v-for="slide in slides" class="slide" :key="slide.id">
-              <h4>{{ slide.title }}</h4>
-            </div>
-          </transition-group>
-          <div class="carousel-controls">
-            <button class="carousel-controls__button" @click="previous">
-              prev
-            </button>
-            <button class="carousel-controls__button" @click="next">
-              next
-            </button>
-          </div>
-        </div>
+        <header>
+          <h1 class="display-3">Internships</h1>
+        </header>
+        <carousel
+          paginationActiveColor="#ea4c4c"
+          paginationColor="#f5e4c3"
+          :perPageCustom="[
+            [1, 1],
+            [1200, 2]
+          ]"
+        >
+          <slide>
+            <b-card
+              no-body
+              class="mt-4 overflow-hidden background"
+              style="max-width: 540px"
+            >
+              <b-row no-gutters>
+                <b-col md="6">
+                  <b-card-img
+                    src="https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1397760804/0c8f2589508a0ac71a45b3f4d9937382.png"
+                    alt="Image"
+                    class="rounded-0"
+                  ></b-card-img>
+                </b-col>
+                <b-col md="6">
+                  <b-card-body title="Horizontal Card">
+                    <b-card-text>
+                      Support WebSphere Commerce deployment and integration with
+                      Docker, SOLR, DB2, OMS, IHS and WAS. Identify defects
+                      through log analysis and debugging code
+                    </b-card-text>
+                  </b-card-body>
+                </b-col>
+              </b-row>
+            </b-card>
+          </slide>
+          <slide>
+            <b-card
+              no-body
+              class="mt-4 overflow-hidden background"
+              style="max-width: 540px;"
+            >
+              <b-row no-gutters>
+                <b-col md="6">
+                  <b-card-img
+                    src="https://brandslogo.net/wp-content/uploads/2013/03/hcl-vector-logo.png"
+                    alt="Image"
+                    class="rounded-0"
+                  ></b-card-img>
+                </b-col>
+                <b-col md="6">
+                  <b-card-body title="Horizontal Card">
+                    <b-card-text>
+                      This is a wider card with supporting text as a natural
+                      lead-in to additional content. This content is a little
+                      bit longer.
+                    </b-card-text>
+                  </b-card-body>
+                </b-col>
+              </b-row>
+            </b-card>
+          </slide>
+          <slide>
+            <b-card
+              no-body
+              class="mt-4 mr-2 overflow-hidden background"
+              style="max-width: 540px;"
+            >
+              <b-row no-gutters>
+                <b-col md="6">
+                  <b-card-img
+                    src="https://lh3.googleusercontent.com/proxy/bmfpFnI_zDZfgxDAa8mKXcDzpNPI8GxxUGqIDaqgA88WdWl9apyfaoGjT8GwJ-XF_mlrk-IC4-QbsTYbRMq9XFdvIn_ORHU0t_6O6U4PvH8i6y1BT1XnXXeqH0GDvRHWGuYz7AoCPCuq_Y-FaxKQlozY1lv9"
+                    alt="Image"
+                    class="rounded-0"
+                  ></b-card-img>
+                </b-col>
+                <b-col md="6">
+                  <b-card-body title="Horizontal Card">
+                    <b-card-text>
+                      This is a wider card with supporting text as a natural
+                      lead-in to additional content. This content is a little
+                      bit longer.
+                    </b-card-text>
+                  </b-card-body>
+                </b-col>
+              </b-row>
+            </b-card>
+          </slide>
+        </carousel>
       </b-col>
     </b-row>
   </div>
@@ -26,96 +99,24 @@
 
 <script>
 // import Carousel from "./Carousel.vue";
+import { Carousel, Slide } from "vue-carousel";
+
 export default {
   name: "Internship",
   props: {
     msg: String
   },
   components: {
-    // carousel: Carousel
-  },
-  data() {
-    return {
-      slides: [
-        {
-          title: "I am Slide A",
-          id: 1
-        },
-        {
-          title: "I am Slide B",
-          id: 2
-        },
-        {
-          title: "I am Slide C",
-          id: 3
-        },
-        {
-          title: "I am Slide D",
-          id: 4
-        },
-        {
-          title: "I am Slide E",
-          id: 5
-        }
-      ]
-    };
-  },
-  methods: {
-    next() {
-      const first = this.slides.shift();
-      this.slides = this.slides.concat(first);
-    },
-    previous() {
-      const last = this.slides.pop();
-      this.slides = [last].concat(this.slides);
-    }
+    carousel: Carousel,
+    slide: Slide
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-img {
-  width: 10%;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #F5E4C3;
-}
-
-h4 {
-  color: #F5E4C3;
-}
-.carousel-view {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 24em;
-  min-height: 25em;
-}
-.slide {
-  flex: 0 0 20em;
-  height: 20em;
-  margin: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.1em dashed #F5E4C3;
-  transition: transform 0.3s ease-in-out;
-}
-.slide:first-of-type {
-  opacity: 0;
-}
-.slide:last-of-type {
-  opacity: 0;
+.background {
+  background-color: #0e2431;
+  border-color: #ea4c4c;
 }
 </style>

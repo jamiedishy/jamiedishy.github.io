@@ -68,4 +68,9 @@ div {
 .fade-leave-to {
   opacity: 0;
 }
+.header-rule {
+  width: 8rem;
+  border: 0;
+  border-top: 4px solid #f5e4c3;
+}
 </style>

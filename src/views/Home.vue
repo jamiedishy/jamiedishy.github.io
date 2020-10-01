@@ -105,9 +105,4 @@ img {
 .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
   opacity: 0;
 }
-.header-rule {
-  width: 8rem;
-  border: 0;
-  border-top: 4px solid #f5e4c3;
-}
 </style>
